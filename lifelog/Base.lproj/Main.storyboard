@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,27 +13,24 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="lifelog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="al0-hb-o7G" userLabel="statusHistory">
-                                <rect key="frame" x="16" y="582" width="396" height="250"/>
+                                <rect key="frame" x="16" y="315" width="288" height="193"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="UE5-ct-9ZL"/>
-                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkA-MF-ltZ">
-                                <rect key="frame" x="16" y="103" width="396" height="463"/>
+                                <rect key="frame" x="16" y="59" width="288" height="240"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zw0-XI-kCp">
-                                        <rect key="frame" x="0.0" y="0.0" width="396" height="463"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="240"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdi-uI-h8q">
-                                                <rect key="frame" x="0.0" y="0.0" width="396" height="76.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="39"/>
                                                 <accessibility key="accessibilityConfiguration" label="ヘルスデータを保存"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="全部のヘルスデータ保存"/>
@@ -42,7 +39,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADr-Ig-ZmM">
-                                                <rect key="frame" x="0.0" y="77.333333333333343" width="396" height="76.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="40" width="288" height="39.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="ヘルスデータを保存"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="3ヶ月前のヘルスデータ保存"/>
@@ -51,7 +48,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TI-MC-dka">
-                                                <rect key="frame" x="0.0" y="154.66666666666669" width="396" height="76.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="80.5" width="288" height="39"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="2ヶ月のヘルスデータ保存"/>
                                                 <connections>
@@ -59,7 +56,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8i-6E-X02">
-                                                <rect key="frame" x="0.0" y="232.00000000000003" width="396" height="76.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="120.5" width="288" height="39"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="先月のヘルスデータ保存"/>
                                                 <connections>
@@ -67,7 +64,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktL-ct-1m9">
-                                                <rect key="frame" x="0.0" y="309.33333333333331" width="396" height="76.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="160.5" width="288" height="39.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="今月のヘルスデータ保存"/>
                                                 <connections>
@@ -75,7 +72,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weB-Bb-NvO">
-                                                <rect key="frame" x="0.0" y="386.66666666666669" width="396" height="76.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="201" width="288" height="39"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="前回保存分からの差分データ保存"/>
                                                 <connections>
@@ -88,21 +85,22 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Zw0-XI-kCp" secondAttribute="trailing" id="3nI-Vo-0ta"/>
+                                    <constraint firstAttribute="height" constant="240" id="ZvU-fO-dMm"/>
                                     <constraint firstAttribute="bottom" secondItem="Zw0-XI-kCp" secondAttribute="bottom" id="a8u-HF-H38"/>
                                     <constraint firstItem="Zw0-XI-kCp" firstAttribute="leading" secondItem="xkA-MF-ltZ" secondAttribute="leading" id="clD-m5-Uli"/>
                                     <constraint firstItem="Zw0-XI-kCp" firstAttribute="top" secondItem="xkA-MF-ltZ" secondAttribute="top" id="dYL-b2-Y58"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JKY-8x-WDZ">
-                                <rect key="frame" x="132.33333333333331" y="64" width="163.33333333333331" height="31"/>
+                                <rect key="frame" x="78.5" y="20" width="163.5" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCloudに保存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjG-MF-VzM">
-                                        <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wfh-Xw-37N">
-                                        <rect key="frame" x="114.33333333333331" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="114.5" y="0.0" width="51" height="31"/>
                                         <connections>
                                             <action selector="iCloudSwitchChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="N6c-Us-mV7"/>
                                         </connections>
@@ -115,7 +113,6 @@
                         <constraints>
                             <constraint firstItem="al0-hb-o7G" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="26d-Pq-1mQ"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="al0-hb-o7G" secondAttribute="bottom" constant="11" id="8Us-jl-i95"/>
-                            <constraint firstItem="xkA-MF-ltZ" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="C2q-z8-Zjn"/>
                             <constraint firstItem="xkA-MF-ltZ" firstAttribute="top" secondItem="JKY-8x-WDZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Cbt-Ya-kp1"/>
                             <constraint firstItem="xkA-MF-ltZ" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="HFx-zc-4XI"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="al0-hb-o7G" secondAttribute="trailing" constant="16" id="RLL-h9-cDp"/>
@@ -124,10 +121,7 @@
                             <constraint firstItem="JKY-8x-WDZ" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="20" id="c7R-sb-EhP"/>
                             <constraint firstItem="al0-hb-o7G" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="cQI-s8-U7s"/>
                             <constraint firstItem="xkA-MF-ltZ" firstAttribute="top" secondItem="JKY-8x-WDZ" secondAttribute="bottom" constant="8" symbolic="YES" id="dc0-5Z-kX0"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="xkA-MF-ltZ" secondAttribute="trailing" constant="16" id="eJ8-02-3Yg"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="al0-hb-o7G" secondAttribute="trailing" constant="16" id="mn9-CB-MmQ"/>
                             <constraint firstItem="al0-hb-o7G" firstAttribute="top" secondItem="xkA-MF-ltZ" secondAttribute="bottom" constant="16" id="veh-hs-9pE"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="al0-hb-o7G" secondAttribute="trailing" constant="16" id="xOG-bM-p3w"/>
                             <constraint firstItem="JKY-8x-WDZ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="zSn-pS-twP"/>
                         </constraints>
                     </view>
@@ -152,11 +146,11 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="lifelog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezB-K2-mTH">
-                                <rect key="frame" x="8" y="60" width="412" height="775"/>
+                                <rect key="frame" x="8" y="16" width="304" height="495"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
