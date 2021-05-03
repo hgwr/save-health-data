@@ -15,6 +15,7 @@ class FirstViewController: UIViewController, StatusWatcher {
 
     @IBOutlet weak var saveICloudSwitch: UISwitch!
     @IBOutlet weak var statusHistoryView: UITextView!
+    @IBOutlet weak var saveAllButton: UIButton!
     @IBOutlet weak var saveThreeMonthAgoButton: UIButton!
     @IBOutlet weak var saveTwoMonthAgoButton: UIButton!
     @IBOutlet weak var saveLastMonthButton: UIButton!
@@ -97,6 +98,10 @@ class FirstViewController: UIViewController, StatusWatcher {
         prepareHealthDBHooks()
     }
     
+    @IBAction func saveAllData(_ sender: UIButton) {
+        saveHealthData(relativeMonth: .all)
+    }
+    
     @IBAction func saveThreeMotnAgoData(_ sender: UIButton) {
         saveHealthData(relativeMonth: .thirdMonthAgo)
     }
@@ -158,6 +163,7 @@ class FirstViewController: UIViewController, StatusWatcher {
             self.buttonEnable = enable
             if enable {
                 self.saveICloudSwitch.isEnabled = true
+                self.saveAllButton.isEnabled = true
                 self.saveThreeMonthAgoButton.isEnabled = true
                 self.saveTwoMonthAgoButton.isEnabled = true
                 self.saveLastMonthButton.isEnabled = true
@@ -165,6 +171,7 @@ class FirstViewController: UIViewController, StatusWatcher {
                 self.saveDifferencesDataButton.isEnabled = true
             } else {
                 self.saveICloudSwitch.isEnabled = false
+                self.saveAllButton.isEnabled = false
                 self.saveThreeMonthAgoButton.isEnabled = false
                 self.saveTwoMonthAgoButton.isEnabled = false
                 self.saveLastMonthButton.isEnabled = false

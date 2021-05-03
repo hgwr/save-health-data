@@ -14,6 +14,7 @@ public enum RelativeMonth: Int {
     case lastMonth = 1
     case secondMonthAgo = 2
     case thirdMonthAgo = 3
+    case all = 9999
 }
 
 public class CalendarUtil {
@@ -22,6 +23,9 @@ public class CalendarUtil {
     public static func specificMonthSpan(relativeMonth: RelativeMonth, referenceDate: Date? = nil) -> (Date, Date) {
         var relativeMonth = relativeMonth
         var now = referenceDate == nil ? CalendarUtil.now() : referenceDate!
+        if (relativeMonth == .all) {
+            return (Date.init(timeIntervalSince1970: 0), now)
+        }
         if (relativeMonth == .differences) {
             if let startDate = UserDefaults.standard.object(forKey: UserDefaultKeys.lastSaved) as? Date {
                 return (startDate, now)
