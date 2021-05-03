@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ヘルプ</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/save-health-data.css" rel="stylesheet">
+  </head>
+  <body>
+    <section id="top">
+      
+      <div class="container" role="main">
+
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <h3>「ヘルスデータ保存」アプリ</h3>
+              <p>ヘルプとプライバシーポリシー</p>
+            </div>
+          </div>
+        </div>
+
+        <h3>「ヘルスデータ保存」アプリについて</h3>
+        <p>
+          「ヘルスデータ保存」 は iPhone に標準搭載されている「ヘルスケア」アプリのデータを
+          CSV ファイルに保存するためのアプリです。
+        </p>
+
+        <h3>CSV ファイルの保存先の変更</h3>
+
+        <p>
+          CSV ファイルの保存先は iCloud Drive またはこの iPhone 内のどちらかを選べます。
+        </p>
+
+        <p>
+          CSV ファイルの保存先は、このアプリの「保存」タブの画面上部のスイッチで切り替えることができます。
+        </p>
+
+        <h3>実際にヘルスデータを保存する</h3>
+
+        <p>
+          「ヘルスケア」アプリに記録されているデータを、CSVファイルに保存する方法は次のとおりです。
+        </p>
+
+        <ol>
+          <li>このアプリの「保存」タブを選択します。</li>
+          <li>「保存」タブの画面に表示されている、「今月のヘルスデータ保存」などの4つのボタンのうちのどれかをタップします。</li>
+          <li>
+            1ヶ月分のデータ行数が15万行を超えることがありますので、 <strong>10分以上</strong> 時間がかかる場合があります。
+          </li>
+          <li>
+            「保存」タブの画面の下半分に進行中の状況が表示されます。
+          </li>
+          <li>
+            そこに「ヘルスデータを保存終了。」と表示されましたら、 CSV ファイルへの保存処理が完了したことになります。下記のスクリーンショットのとおりです。
+          </li>
+        </ol>
+
+        <div class="container">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <img src="health data saved iPhone 7.png" class="img-responsive" >
+            </div>
+          </div>
+        </div>
+
+        <h3>保存した CSV ファイルを使用する</h3>
+
+        <p>
+          保存した CSV ファイルは、 iPhone に標準搭載されている「ファイル」アプリから開いたり共有したりできます。
+        </p>
+
+        <p>
+          「save-health-data」というフォルダ内に CSV ファイルが保存されます。
+        </p>
+
+        <p>
+          具体的なアクセス方法は下記の動画をご参照ください。
+        </p>
+
+        <div class="container">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <img src="File app in iPhone.gif" class="img-responsive" >
+            </div>
+          </div>
+        </div>
+
+        <p>
+          iCloud Drive に CSV ファイルを保存しますと、お使いの Mac の Finder からも、その CSV ファイルにアクセスできます。下記のスクリーンショットのとおり、 iCloud Drive 内の save-health-data というフォルダに CSV ファイルが保存されます。
+        </p>
+
+        <div class="container">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <img src="save-health-data files in finder.png" class="img-responsive" >
+            </div>
+          </div>
+        </div>
+
+        <h3>CSV ファイルの命名規則</h3>
+
+        <p>
+          生成される CSV ファイル名は次のようになります。
+        </p>
+
+        <ul>
+          <li>ファイル名の先頭に<code>health_data_</code>が付きます。</li>
+          <li>次に<code>CC505018-C640-4F3D-B5DF-3EA67530DBA8</code>のような UUID 文字列が続きます。
+            この UUID は、お客様がお使いの iPhone の端末 ID です。
+            これをファイル名に入れているのは、複数の iPhone をお持ちの場合、ファイル名が重複し上書きされるのを防ぐためです。</li>
+          <li>次の<code>f20201001</code>の部分は、その CSV の保存されているデータの開始日です。</li>
+          <li>次の<code>t20201031</code>の部分は、その CSV の保存されているデータの終了日です。</li>
+          <li>最後の<code>at20201026-163457</code>の部分は、CSVファイルの保存を開始した日時です。</li>
+        </ul>
+        
+     </div>
+    </section>
+
+    <section id="privacy">
+      <div class="container">
+        <h3>プライバシーポリシー</h3>
+
+        <p>
+          お客様が「ヘルスデータ保存」アプリを利用しますと、
+          お客様のお使いの iPhone に保存されている「ヘルスケア」アプリ内のデータを、
+          その iPhone 内またはお客様の iCloud Drive 内の save-health-data フォルダに CSV ファイルとして保存できます。
+        </p>
+
+        <p>
+          以下では「ヘルスデータ保存」アプリが収集する情報と、その利用方法について詳しくご説明します。
+        </p>
+
+        <h4>「ヘルスデータ保存」アプリが収集する情報</h4>
+
+        <p>
+          Apple 社は「ヘルスケア」データへのアクセス方法を
+          <a href="https://developer.apple.com/healthkit/">HealthKit</a> として公式に提供しています。
+          「ヘルスデータ保存」アプリはその HealthKit を利用して、「ヘルスケア」アプリに保存されているデータや情報をを収集しています。
+        </p>
+
+        <p>
+          「ヘルスデータ保存」アプリが HealthKit を利用して収集しようとするデータの種類は、
+          デフォルトでは HealthKit から取得することが許されるデータの全てです。
+        </p>
+
+        <p>
+          お客様は iPhone の「設定」アプリ内から、「ヘルスデータ保存」アプリがアクセスするデータを制限することができます。具体的な手順は次のとおりです。
+        </p>
+
+        <ol>
+          <li>iPhone の「設定」アプリを開きます。</li>
+          <li>「プライバシー」を選択します。</li>
+          <li>「プライバシー」の中で「ヘルスケア」を選択します。</li>
+          <li>「ヘルスケア」の中で「ヘルスデータ保存」を選択します。</li>
+          <li>お客様が「ヘルスデータ保存」アプリにアクセス制限したい項目をオフにします。</li>
+        </ol>
+
+        <h4>その情報の利用方法</h4>
+
+        <p>
+          上述のとおり「ヘルスデータ保存」アプリは、 HealthKit を利用してデータを収集します。
+          「ヘルスデータ保存」アプリは、その収集したデータを、
+          お客様のお使いの iPhone 内、
+          またはお客様の iCloud Drive 内の save-health-data フォルダに CSV ファイルとして保存します。
+          「ヘルスデータ保存」アプリが収集した情報を利用する方法、範囲はそれだけです。
+        </p>
+
+        <p>
+          「ヘルスデータ保存」アプリはお客様の個人情報を外部のサーバーに送信したりすることは、一切いたしません。
+        </p>
+        
+      </div>
+    </section>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/save-health-data.js"></script>
+  </body>
+</html>

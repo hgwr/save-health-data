@@ -1,0 +1,6 @@
+framework module Pods_lifelog {
+  umbrella header "Pods-lifelog-umbrella.h"
+
+  export *
+  module * { export * }
+}
