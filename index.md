@@ -1,37 +1,87 @@
-## Welcome to GitHub Pages
+## ヘルスデータ保存の GitHub repository save-health-data へようこそ
 
-You can use the [editor on GitHub](https://github.com/hgwr/save-health-data/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### 「ヘルスデータ保存」アプリのヘルプとプライバシーポリシーについて
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+#### 「ヘルスデータ保存」アプリについて
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+「ヘルスデータ保存」 は iPhone に標準搭載されている「ヘルスケア」アプリのデータを CSV ファイルに保存するためのアプリです。
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+#### CSV ファイルの保存先の変更
 
-- Bulleted
-- List
+CSV ファイルの保存先は iCloud Drive またはこの iPhone 内のどちらかを選べます。
 
-1. Numbered
-2. List
+CSV ファイルの保存先は、このアプリの「保存」タブの画面上部のスイッチで切り替えることができます。
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+#### 実際にヘルスデータを保存する
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+「ヘルスケア」アプリに記録されているデータを、CSVファイルに保存する方法は次のとおりです。
 
-### Jekyll Themes
+1. このアプリの「保存」タブを選択します。
+2. 「保存」タブの画面に表示されている、「今月のヘルスデータ保存」などの4つのボタンのうちのどれかをタップします。
+3. 1ヶ月分のデータ行数が15万行を超えることがありますので、 <strong>10分以上</strong> 時間がかかる場合があります。
+4. 「保存」タブの画面の下半分に進行中の状況が表示されます。
+5. そこに「ヘルスデータを保存終了。」と表示されましたら、 CSV ファイルへの保存処理が完了したことになります。
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hgwr/save-health-data/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### 保存した CSV ファイルを使用する
 
-### Support or Contact
+保存した CSV ファイルは、 iPhone に標準搭載されている「ファイル」アプリから開いたり共有したりできます。
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+「lifelog」というフォルダ内に CSV ファイルが保存されます。
+
+
+iCloud Drive に CSV ファイルを保存しますと、お使いの Mac の Finder からも、その CSV ファイルにアクセスできます。下記のスクリーンショットのとおり、 iCloud Drive 内の lifelog というフォルダに CSV ファイルが保存されます。
+
+#### CSV ファイルの命名規則
+
+生成される CSV ファイル名は次のようになります。
+
+
+
+- ファイル名の先頭に `health_data_` が付きます。
+- 次に `CC505018-C640-4F3D-B5DF-3EA67530DBA8` のような UUID 文字列が続きます。 この UUID は、お客様がお使いの iPhone の端末 ID です。 これをファイル名に入れているのは、複数の iPhone をお持ちの場合、ファイル名が重複し上書きされるのを防ぐためです。
+- 次の `f20201001` の部分は、その CSV の保存されているデータの開始日です。
+- 次の `t20201031` の部分は、その CSV の保存されているデータの終了日です。
+- 最後の `at20201026-163457` の部分は、CSVファイルの保存を開始した日時です。
+
+### プライバシーポリシー
+
+お客様が「ヘルスデータ保存」アプリを利用しますと、 お客様のお使いの iPhone に保存されている「ヘルスケア」アプリ内のデータを、その iPhone 内またはお客様の iCloud Drive 内の lifelog フォルダに CSV ファイルとして保存できます。
+
+以下では「ヘルスデータ保存」アプリが収集する情報と、その利用方法について詳しくご説明します。
+
+#### 「ヘルスデータ保存」アプリが収集する情報
+
+
+
+Apple 社は「ヘルスケア」データへのアクセス方法を [HealthKit](https://developer.apple.com/healthkit/) として公式に提供しています。
+「ヘルスデータ保存」アプリはその HealthKit を利用して、「ヘルスケア」アプリに保存されているデータや情報をを収集しています。
+
+
+
+「ヘルスデータ保存」アプリが HealthKit を利用して収集しようとするデータの種類は、デフォルトでは HealthKit から取得することが許されるデータの全てです。
+
+お客様は iPhone の「設定」アプリ内から、「ヘルスデータ保存」アプリがアクセスするデータを制限することができます。具体的な手順は次のとおりです。
+
+
+1. iPhone の「設定」アプリを開きます。
+2. 「プライバシー」を選択します。
+3. 「プライバシー」の中で「ヘルスケア」を選択します。
+4. 「ヘルスケア」の中で「ヘルスデータ保存」を選択します。
+5. お客様が「ヘルスデータ保存」アプリにアクセス制限したい項目をオフにします。
+
+#### その情報の利用方法
+
+上述のとおり「ヘルスデータ保存」アプリは、 HealthKit を利用してデータを収集します。
+
+「ヘルスデータ保存」アプリは、その収集したデータを、お客様のお使いの iPhone 内、またはお客様の iCloud Drive 内の lifelog フォルダに CSV ファイルとして保存します。
+
+「ヘルスデータ保存」アプリが収集した情報を利用する方法、範囲はそれだけです。
+
+「ヘルスデータ保存」アプリはお客様の個人情報を外部のサーバーに送信したりすることは、一切いたしません。
+
+## サポート、コンタクト
+
+GitHub の [issues](https://github.com/hgwr/save-health-data/issues) からご報告ください。
